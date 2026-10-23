@@ -71,6 +71,11 @@ a { text-decoration:none; }
 .hero .approved-hero-image{-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 10%,#000 90%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 10%,#000 90%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
 /* Stronger edge blend: fade the entire image before its rectangular boundaries */
 .hero .approved-hero-image{display:block!important;-webkit-mask-image:radial-gradient(ellipse 73% 87% at 50% 44%,#000 52%,rgba(0,0,0,.95) 60%,rgba(0,0,0,.45) 77%,transparent 100%)!important;mask-image:radial-gradient(ellipse 73% 87% at 50% 44%,#000 52%,rgba(0,0,0,.95) 60%,rgba(0,0,0,.45) 77%,transparent 100%)!important;-webkit-mask-composite:initial!important;mask-composite:add!important;mix-blend-mode:multiply}
+/* Full-bleed hero eliminates left/right image seams rather than blurring a smaller rectangle. */
+.hero{position:relative;overflow:visible}
+.hero .approved-hero-image{position:relative!important;left:50%!important;transform:translateX(-50%)!important;width:100vw!important;max-width:none!important;height:auto!important;display:block!important;margin:0!important;mix-blend-mode:normal!important;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 76%,transparent 100%)!important;mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 76%,transparent 100%)!important;-webkit-mask-composite:initial!important;mask-composite:add!important}
+body{overflow-x:hidden}
+@media(max-width:600px){.hero .approved-hero-image{width:125vw!important;max-width:none!important}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
