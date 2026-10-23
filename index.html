@@ -99,6 +99,13 @@ body{overflow-x:hidden}
 .investment-disclaimer{text-align:center!important}.investment-disclaimer .disclaimer-label{text-align:center!important}.investment-disclaimer p{text-align:center!important}
 /* Mobile hero: enlarge the lettering while cropping only empty side margins. */
 @media(max-width:600px){.hero{overflow:hidden!important}.hero .approved-hero-image{position:relative!important;left:50%!important;transform:translateX(-50%)!important;width:145%!important;max-width:none!important;height:auto!important;margin:0!important}.hero.hero-image-ready{padding-bottom:12px!important}}
+/* Mobile disclaimer: readable left-aligned paragraphs, desktop stays centered. */
+@media(max-width:600px){
+.investment-disclaimer{text-align:left!important;padding:20px 18px!important}
+.investment-disclaimer .disclaimer-label{text-align:left!important;display:flex!important;align-items:center;gap:7px;flex-wrap:wrap;font-size:15px!important;line-height:1.5!important}
+.investment-disclaimer p{text-align:left!important;font-size:14px!important;line-height:1.8!important;word-break:keep-all!important;overflow-wrap:break-word!important;margin:10px 0!important}
+.investment-disclaimer p br{display:none!important}
+}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
