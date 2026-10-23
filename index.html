@@ -76,11 +76,14 @@ a { text-decoration:none; }
 .hero .approved-hero-image{position:relative!important;left:50%!important;transform:translateX(-50%)!important;width:100vw!important;max-width:none!important;height:auto!important;display:block!important;margin:0!important;mix-blend-mode:normal!important;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 76%,transparent 100%)!important;mask-image:linear-gradient(to bottom,transparent 0%,#000 7%,#000 76%,transparent 100%)!important;-webkit-mask-composite:initial!important;mask-composite:add!important}
 body{overflow-x:hidden}
 @media(max-width:600px){.hero .approved-hero-image{width:125vw!important;max-width:none!important}}
+/* Transparent hero: no rectangular background to mask or blend */
+.hero .approved-hero-image{mix-blend-mode:normal!important;-webkit-mask-image:none!important;mask-image:none!important;width:100%!important;max-width:100%!important;left:auto!important;transform:none!important;position:static!important;margin:0 auto!important}
+@media(max-width:600px){.hero .approved-hero-image{width:100%!important}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
 <main class="wrap">
-<section class="hero"><img src="newjaepal-hero.png" alt="월급 외에 수익을 만드는 뉴재빨 프로젝트 — 문과생인 내가, AI로 여기까지 만들었다" class="approved-hero-image" onload="this.parentElement.classList.add('hero-image-ready')" onerror="this.style.display='none'">
+<section class="hero"><img src="newjaepal-hero-transparent.png" alt="월급 외에 수익을 만드는 뉴재빨 프로젝트 — 문과생인 내가, AI로 여기까지 만들었다" class="approved-hero-image" onload="this.parentElement.classList.add('hero-image-ready')" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='newjaepal-hero.png'}else{this.style.display='none'}">
 <div class="eyebrow">월급 외에 <span class="eyebrow-accent">수익을 만드는</span></div>
 <h1 class="newjaepal-logo"><span class="newjaepal-script">뉴재빨</span><span class="newjaepal-project">프로젝트</span></h1>
 <div class="tabs creative-line">문과생인 내가, AI로 여기까지 만들었다. <span aria-hidden="true">✨</span></div>
