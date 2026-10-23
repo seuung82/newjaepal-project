@@ -60,13 +60,19 @@ a { text-decoration:none; }
 .hero .contact-note { display:inline-block; margin-top:10px; font-size:1.08em; font-weight:800; color:#253752; letter-spacing:-.015em; }
 
 .hero .creative-line{display:inline-flex;align-items:center;gap:7px;max-width:100%;white-space:normal;text-align:center;line-height:1.5;font-weight:850;font-size:clamp(16px,3.7vw,21px);color:#24416f;padding:12px 22px;border:1px solid #d7e5fc;background:linear-gradient(110deg,#ffffff,#eef5ff);box-shadow:0 8px 28px rgba(36,80,156,.09)}
+.hero .eyebrow{font-size:clamp(20px,3.1vw,32px);font-weight:900;letter-spacing:-.055em;margin-bottom:17px;color:#1d2535}
+.hero .eyebrow-accent{background:linear-gradient(90deg,#287bff,#6140ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero .newjaepal-logo{display:flex;align-items:center;justify-content:center;gap:clamp(6px,1.5vw,18px);flex-wrap:wrap;line-height:1.15;margin-bottom:12px}
+.hero .newjaepal-logo .newjaepal-script{background:none;-webkit-background-clip:initial;background-clip:initial;color:#111!important;font-family:'Nanum Brush Script','Nanum Pen Script',cursive;font-size:clamp(62px,10vw,115px);font-weight:700;letter-spacing:-.06em;transform:rotate(-4deg);display:inline-block;white-space:nowrap}
+.hero .newjaepal-logo .newjaepal-project{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:clamp(43px,7.8vw,91px);font-weight:950;letter-spacing:-.075em;background:linear-gradient(100deg,#259cff,#6242ff);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+@media(max-width:600px){.hero .newjaepal-logo{gap:0}.hero .newjaepal-logo .newjaepal-script{font-size:clamp(55px,13vw,78px)}.hero .newjaepal-logo .newjaepal-project{font-size:clamp(37px,10vw,65px)}}
 </style>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
 <main class="wrap">
 <section class="hero">
-<div class="eyebrow">배우고 만들고 함께 성장하는</div>
-<h1>뉴재빨 <span>프로젝트</span></h1>
+<div class="eyebrow">월급 외에 <span class="eyebrow-accent">수익을 만드는</span></div>
+<h1 class="newjaepal-logo"><span class="newjaepal-script">뉴재빨</span><span class="newjaepal-project">프로젝트</span></h1>
 <div class="tabs creative-line">문과생인 내가, AI로 여기까지 만들었다. <span aria-hidden="true">✨</span></div>
 <p class="sub">스레드에서 시작해, AI로 직접 만들었습니다.<br class="desktop-break"/>강의부터 전자책, AI 서비스까지 만나보세요.<br/><span class="contact-note">(협업문의는 메세지 주세요.)</span></p>
 </section>
