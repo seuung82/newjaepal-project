@@ -79,6 +79,17 @@ body{overflow-x:hidden}
 /* Transparent hero: no rectangular background to mask or blend */
 .hero .approved-hero-image{mix-blend-mode:normal!important;-webkit-mask-image:none!important;mask-image:none!important;width:100%!important;max-width:100%!important;left:auto!important;transform:none!important;position:static!important;margin:0 auto!important}
 @media(max-width:600px){.hero .approved-hero-image{width:100%!important}}
+/* Refined closing section */
+.site-ending{margin:42px auto 0;max-width:920px;text-align:center}
+.ending-message{padding:20px 12px 24px}
+.ending-heart{display:inline-block;color:#f05d78;font-size:21px;margin-bottom:9px}
+.ending-heading{margin:0;font-size:clamp(19px,3vw,25px);font-weight:850;letter-spacing:-.035em;line-height:1.5;color:#243858;word-break:keep-all}
+.ending-sub{margin:7px 0 0;font-size:clamp(14px,2vw,17px);line-height:1.7;color:#68758a;word-break:keep-all}
+.ending-sub strong{color:#314f84}
+.investment-disclaimer{margin:14px auto 0;padding:18px 22px;background:#f5f7fb;border:1px solid #e4e9f1;border-radius:14px;text-align:left;color:#758095}
+.disclaimer-label{display:block;font-size:12px;font-weight:800;letter-spacing:.025em;color:#64728a;margin-bottom:8px}
+.investment-disclaimer p{margin:3px 0;font-size:12px;line-height:1.85;word-break:keep-all;overflow-wrap:break-word}
+@media(max-width:600px){.site-ending{margin-top:30px}.ending-message{padding:14px 8px 19px}.investment-disclaimer{padding:15px 16px;border-radius:12px}.investment-disclaimer p{font-size:11.5px}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
@@ -183,11 +194,18 @@ body{overflow-x:hidden}
 </article>
 </section>
 
-<div class="footer">
-<div>❤️ 좋은 아이디어가 좋은 기회를 만듭니다.</div>
-<div><strong>뉴재빨 프로젝트</strong>와 함께, 지금 바로 시작해보세요!</div>
-</div>
-<div class="note" role="note">※ 본 콘텐츠는 투자 교육 및 정보 제공을 목적으로 하며, 특정 종목의 매수·매도를 권유하거나 투자 수익을 보장하지 않습니다. 모든 투자에는 원금 손실 위험이 있으며, 최종 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+<footer class="site-ending">
+  <div class="ending-message">
+    <span class="ending-heart" aria-hidden="true">♥</span>
+    <p class="ending-heading">좋은 아이디어가 새로운 기회가 됩니다.</p>
+    <p class="ending-sub"><strong>뉴재빨 프로젝트</strong>와 함께 시작해 보세요.</p>
+  </div>
+  <div class="investment-disclaimer" role="note" aria-label="투자 유의사항">
+    <span class="disclaimer-label">투자 유의사항</span>
+    <p>본 콘텐츠는 투자 교육 및 정보 제공을 위한 것으로, 특정 종목의 매수·매도를 권유하거나 투자 수익을 보장하지 않습니다.</p>
+    <p>모든 투자에는 원금 손실 위험이 있으며, 최종 투자 판단과 책임은 투자자 본인에게 있습니다.</p>
+  </div>
+</footer>
 </main>
 </body>
 </html>
