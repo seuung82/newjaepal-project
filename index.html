@@ -69,6 +69,8 @@ a { text-decoration:none; }
 .hero .approved-hero-image{display:block;width:100%;height:auto;max-width:100%;margin:0 auto}.hero.hero-image-ready>.eyebrow,.hero.hero-image-ready>h1,.hero.hero-image-ready>.tabs,.hero.hero-image-ready>.sub{display:none!important}.hero.hero-image-ready{padding:0 0 24px}.wrap{max-width:1100px}@media(max-width:600px){.hero .approved-hero-image{width:100%}}
 /* Fade banner edges into the page background without altering the artwork */
 .hero .approved-hero-image{-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 10%,#000 90%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 10%,#000 90%,transparent 100%),linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+/* Stronger edge blend: fade the entire image before its rectangular boundaries */
+.hero .approved-hero-image{display:block!important;-webkit-mask-image:radial-gradient(ellipse 73% 87% at 50% 44%,#000 52%,rgba(0,0,0,.95) 60%,rgba(0,0,0,.45) 77%,transparent 100%)!important;mask-image:radial-gradient(ellipse 73% 87% at 50% 44%,#000 52%,rgba(0,0,0,.95) 60%,rgba(0,0,0,.45) 77%,transparent 100%)!important;-webkit-mask-composite:initial!important;mask-composite:add!important;mix-blend-mode:multiply}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet"></head>
 <body>
